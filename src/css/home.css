@@ -1,0 +1,110 @@
+main {
+    height: 100vh;
+    background-image: url(../images/background-home-desktop.jpg);
+    display: grid;
+    grid-template-areas: "menu menu"
+                         "text button";
+    grid-template-rows: 10rem;
+}
+
+header {
+    grid-area: menu;
+    padding-left: 5.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+header nav {
+    position: relative;
+    width: 60%;
+    height: 95%;
+    background-color: #ffffff41;
+    display: flex;
+}
+
+header nav .header-design-line {
+    position: absolute;
+    left: -55%;
+    width: 60%;
+    height: 50%;
+    border-bottom: 0.1rem solid #979797;
+}
+
+header nav ul {
+    margin-left: 15%;
+    display: flex;
+    align-items: flex-end;
+    gap: 4.8rem;
+}
+
+header nav ul li {
+    height: 60%;
+}
+
+header nav ul li:hover {
+    border-bottom: 0.3rem solid #ffffff;
+}
+
+header nav ul li a {
+    font-size: 1.6rem;
+    letter-spacing: 0.27rem;
+}
+
+header nav ul li a span {
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+.main-text-area {
+    grid-area: text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-text-area .main-text-container {
+    width: 45rem;
+}
+
+.main-text-area .main-text-container .main-text-prelude {
+    font-size: 2.8rem;
+    letter-spacing: 0.475rem;
+    color: #D0D6F9;
+}
+
+.main-text-area .main-text-container .main-text-tittle {
+    margin: 0.25rem 0;
+    font-family: 'Bellefair', serif;
+    font-size: 15rem;
+    color: #ffffff;
+}
+
+.main-text-area .main-text-container .main-text {
+    text-align: justify;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    color: #D0D6F9;
+}
+
+.button-area {
+    grid-area: button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-area button {
+    width: 27.4rem;
+    height: 27.4rem;
+    border: none;
+    border-radius: 50%;
+    font-family: 'Bellefair', serif;
+    font-size: 3.2rem;
+    letter-spacing: 0.2rem;
+}
