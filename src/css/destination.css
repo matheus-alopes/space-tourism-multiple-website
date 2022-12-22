@@ -1,0 +1,174 @@
+main {
+    height: 100vh;
+    padding-top: 4rem;
+    background: url(../images/destination/background-destination-desktop.jpg) no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-areas: "menu menu"
+                         "image destination-infos";
+    grid-template-rows: 10rem;
+}
+
+header {
+    grid-area: menu;
+    padding-left: 5.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+header nav {
+    position: relative;
+    width: 60%;
+    height: 95%;
+    background-color: #ffffff41;
+    display: flex;
+}
+
+header nav .header-design-line {
+    position: absolute;
+    left: -55%;
+    width: 60%;
+    height: 50%;
+    border-bottom: 0.1rem solid #979797;
+}
+
+header nav ul {
+    margin-left: 15%;
+    display: flex;
+    align-items: flex-end;
+    gap: 4.8rem;
+}
+
+header nav ul li {
+    height: 60%;
+}
+
+header nav ul li:hover {
+    border-bottom: 0.3rem solid #ffffff50;
+}
+
+header nav ul li:active {
+    border-bottom: 0.3rem solid #ffffff;
+    color: red;
+}
+
+header nav ul li a {
+    font-size: 1.6rem;
+    letter-spacing: 0.27rem;
+}
+
+header nav ul li a span {
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+.image-area {
+    grid-area: image;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-area .destination-tittle {
+    margin: 0 0 10rem 27rem;
+    color: #ffffff;
+    font-size: 2.8rem;
+    letter-spacing: 0.472rem;
+}
+
+.image-area .destination-tittle span {
+    margin-right: 2.8rem;
+    color: #ffffff41;
+    font-weight: bold;
+}
+
+.image-area img {
+    display: none;
+    width: 44.5rem;
+    height: 44.5rem;
+    margin-left: 33rem;
+}
+
+.image-area .titan-img {
+    display: block;
+}
+
+.destination-infos-area {
+    grid-area: destination-infos;
+    padding-top: 18rem;
+    color: #D0D6F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.destination-infos-area nav ul{
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.27rem;
+    display: flex;
+    gap: 3.5rem;
+}
+
+.destination-infos-area nav ul li {
+    height: 3.5rem;
+    cursor: pointer;
+}
+
+.destination-infos-area nav ul li:hover {
+    border-bottom: 0.3rem solid #ffffff50;
+}
+
+.destination-infos-area nav ul li:active {
+    border-bottom: 0.3rem solid #ffffff;
+    color: #ffffff;
+}
+
+.destination-infos-area .destination-infos-container {
+    width: 45rem;
+    margin-bottom: 13rem;
+    display: none;
+}
+
+.destination-infos-area .destination-infos-container.titan-infos {
+    display: block;
+}
+
+.destination-infos-area .destination-infos-container .destination-tittle {
+    font-family: 'Bellefair', serif;
+    font-size: 10rem;
+    color: #ffffff;
+}
+
+.destination-infos-area .destination-infos-container .destination-text {
+    margin-bottom: 5.5rem;
+    font-family: 'Barlow', sans-serif;
+    text-align: justify;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    color: #D0D6F9;
+}
+
+.destination-infos-area .destination-infos-container footer {
+    padding-top: 2rem ;
+    border-top: 0.1rem solid #383B4B;
+    font-size: 2.8rem;
+    display: flex;
+    gap: 8rem;
+}
+
+.destination-infos-area .destination-infos-container footer p {
+    color: #ffffff;
+}
+
+.destination-infos-area .destination-infos-container footer p span {
+    color: #D0D6F9;
+    font-size: 1.4rem;
+    letter-spacing: 0.23rem;
+}
