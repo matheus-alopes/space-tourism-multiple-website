@@ -1,8 +1,13 @@
-main {
-    height: 100vh;
-    padding-top: 4rem;
-    background: url(../images/background-home-desktop.jpg) no-repeat;
+body {
+    background: url(../images/home/background-home-desktop.jpg) no-repeat;
     background-size: cover;
+}
+
+main {
+    min-height: 100vh;
+    max-width: 200rem;
+    padding-top: 4rem;
+    margin: 0 auto;
     display: grid;
     grid-template-areas: "menu menu"
                          "text button";
@@ -54,6 +59,10 @@ header nav ul li:hover {
 }
 
 header nav ul li:active {
+    border-bottom: 0.3rem solid #ffffff;
+}
+
+header nav ul li.active-page {
     border-bottom: 0.3rem solid #ffffff;
 }
 

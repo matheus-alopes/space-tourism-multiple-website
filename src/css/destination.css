@@ -1,8 +1,13 @@
-main {
-    height: 100vh;
-    padding-top: 4rem;
+body {
     background: url(../images/destination/background-destination-desktop.jpg) no-repeat;
     background-size: cover;
+}
+
+main {
+    min-height: 100vh;
+    max-width: 200rem;
+    padding-top: 4rem;
+    margin: 0 auto;
     display: grid;
     grid-template-areas: "menu menu"
                          "image destination-infos";
@@ -55,7 +60,10 @@ header nav ul li:hover {
 
 header nav ul li:active {
     border-bottom: 0.3rem solid #ffffff;
-    color: red;
+}
+
+header nav ul li.active-page {
+    border-bottom: 0.3rem solid #ffffff;
 }
 
 header nav ul li a {
@@ -95,7 +103,7 @@ header nav ul li a span {
     margin-left: 33rem;
 }
 
-.image-area .titan-img {
+.image-area .moon-img {
     display: block;
 }
 
@@ -125,7 +133,7 @@ header nav ul li a span {
     border-bottom: 0.3rem solid #ffffff50;
 }
 
-.destination-infos-area nav ul li:active {
+.destination-infos-area nav ul li.active-button {
     border-bottom: 0.3rem solid #ffffff;
     color: #ffffff;
 }
@@ -136,7 +144,7 @@ header nav ul li a span {
     display: none;
 }
 
-.destination-infos-area .destination-infos-container.titan-infos {
+.destination-infos-area .destination-infos-container.moon-infos {
     display: block;
 }
 

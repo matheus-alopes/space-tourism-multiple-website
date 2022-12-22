@@ -1,0 +1,177 @@
+body {
+    background: url(../images/technology/background-technology-desktop.jpg) no-repeat;
+    background-size: cover;
+}
+
+main {
+    min-height: 100vh;
+    max-width: 200rem;
+    padding-top: 4rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 7.4rem;
+}
+
+header {
+    height: 10vh;
+    min-height: 10rem;
+    padding-left: 5.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+header nav {
+    position: relative;
+    width: 60%;
+    height: 95%;
+    background-color: #ffffff41;
+    display: flex;
+}
+
+header nav .header-design-line {
+    position: absolute;
+    left: -55%;
+    width: 60%;
+    height: 50%;
+    border-bottom: 0.1rem solid #979797;
+}
+
+header nav ul {
+    margin-left: 15%;
+    display: flex;
+    align-items: flex-end;
+    gap: 4.8rem;
+}
+
+header nav ul li {
+    height: 60%;
+}
+
+header nav ul li:hover {
+    border-bottom: 0.3rem solid #ffffff50;
+}
+
+header nav ul li:active {
+    border-bottom: 0.3rem solid #ffffff;
+}
+
+header nav ul li.active-page {
+    border-bottom: 0.3rem solid #ffffff;
+}
+
+header nav ul li a {
+    font-size: 1.6rem;
+    letter-spacing: 0.27rem;
+}
+
+header nav ul li a span {
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+main .page-prelude-title {
+    margin: 0 0 3.4rem 19rem; 
+    color: #ffffff;
+    font-size: 2.8rem;
+    letter-spacing: 0.472rem;
+}
+
+main .page-prelude-title span {
+    margin-right: 2.4rem;
+    color: #ffffff41;
+    font-weight: bold;
+}
+
+main .main-container {
+    margin-left: 19rem;
+    display: grid;
+    grid-template-areas: "navigation text image";
+    grid-template-columns: 1fr 8fr 7fr;
+}
+
+main .main-container .navigation-buttons {
+    grid-area: navigation;
+    padding-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+main .main-container .navigation-buttons div {
+    color: #ffffff;
+    font-family: 'Bellefair', serif;
+    font-size: 3.2rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 0.1rem solid #ffffff2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+main .main-container .navigation-buttons div.active-button {
+    background-color: #ffffff;
+    color: #0B0D17;
+}
+
+main .main-container .navigation-buttons div:hover {
+    border-color: #ffffff;
+}
+
+main .main-container .text-container {
+    grid-area: text;
+    padding: 12rem;
+    text-align: justify;
+}
+
+main .main-container .text-container .technology-prelude-text {
+    margin-bottom: 1.1rem;
+    color: #D0D6F9;
+    font-size: 1.6rem;
+    letter-spacing: 0.27rem;
+}
+
+main .main-container .text-container ul li {
+    display: none;
+}
+
+main .main-container .text-container ul li:first-child {
+    display: block;
+}
+
+main .main-container .text-container ul li .technology-title {
+    margin-bottom: 1.7rem;
+    color: #ffffff;
+    font-family: 'Bellefair', serif;
+    font-size: 5.6rem;
+}
+
+main .main-container .text-container ul li .technology-text {
+    color: #D0D6F9;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    font-family: 'Barlow', sans-serif;
+}
+
+main .main-container .img-container {
+    grid-area: image;
+}
+
+main .main-container .img-container img {
+    display: none;
+    border-radius: 0.2rem;
+}
+
+main .main-container .img-container img:first-child {
+    display: block;
+}

@@ -1,0 +1,169 @@
+body {
+    background: url(../images/crew/background-crew-desktop.jpg) no-repeat;
+    background-size: cover;
+}
+
+main {
+    min-height: 100vh;
+    max-width: 200rem;
+    padding-top: 4rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "menu menu"
+                         "infos image";
+    grid-template-rows: 10rem;
+    grid-template-columns: 3fr 2fr;
+}
+
+header {
+    grid-area: menu;
+    padding-left: 5.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+header nav {
+    position: relative;
+    width: 60%;
+    height: 95%;
+    background-color: #ffffff41;
+    display: flex;
+}
+
+header nav .header-design-line {
+    position: absolute;
+    left: -55%;
+    width: 60%;
+    height: 50%;
+    border-bottom: 0.1rem solid #979797;
+}
+
+header nav ul {
+    margin-left: 15%;
+    display: flex;
+    align-items: flex-end;
+    gap: 4.8rem;
+}
+
+header nav ul li {
+    height: 60%;
+}
+
+header nav ul li:hover {
+    border-bottom: 0.3rem solid #ffffff50;
+}
+
+header nav ul li:active {
+    border-bottom: 0.3rem solid #ffffff;
+}
+
+header nav ul li.active-page {
+    border-bottom: 0.3rem solid #ffffff;
+}
+
+header nav ul li a {
+    font-size: 1.6rem;
+    letter-spacing: 0.27rem;
+}
+
+header nav ul li a span {
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+.text-area {
+    grid-area: infos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-area .text-area-container {
+    width: 62rem;
+}
+
+.text-area .text-area-container .page-prelude-title {
+    margin-bottom: 15.4rem;
+    color: #ffffff;
+    font-size: 2.8rem;
+    letter-spacing: 0.472rem;
+}
+
+.text-area .text-area-container .page-prelude-title span {
+    margin-right: 2.4rem;
+    color: #ffffff41;
+    font-weight: bold;
+}
+
+.text-area .text-area-container .crew-infos li .crew-patent{
+    margin-bottom: 1.5rem;
+    color: #ffffff41;
+    font-family: 'Bellefair', serif;
+    font-size: 3.2rem;
+}
+
+.text-area .text-area-container .crew-infos li .crew-name {
+    margin-bottom: 3rem;
+    color: #ffffff;
+    font-family: 'Bellefair', serif;
+    font-size: 5.6rem;
+}
+
+.text-area .text-area-container .crew-infos li .crew-description {
+    margin-bottom: 12rem;
+    text-align: justify;
+    color: #D0D6F9;
+    line-height: 3.2rem;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.8rem;
+}
+
+.text-area .crew-infos li {
+    display: none;
+}
+
+.text-area .crew-infos .commander-infos {
+    display: block;
+}
+
+.text-area .navigation-dots {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.text-area .navigation-dots div {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #9797977e;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.text-area .navigation-dots div:hover {
+    background-color: #979797;
+}
+
+.text-area .navigation-dots div.active-button {
+    background-color: #ffffff;
+}
+
+.crew-image-area {
+    grid-area: image;
+    display: flex;
+    align-items: flex-end;
+}
+
+.crew-image-area img {
+    display: none;
+}
+
+.crew-image-area .commander-img {
+    display: block;
+}
