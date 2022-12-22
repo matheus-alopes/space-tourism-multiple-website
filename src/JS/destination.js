@@ -1,4 +1,4 @@
-import {adicionarAcaoDeClick} from "./menu"
+import {adicionarAcaoDeClick} from "./menu.js"
 
 const moon = {
     image: document.querySelector("main .image-area .moon-img"),
