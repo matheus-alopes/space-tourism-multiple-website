@@ -4,7 +4,8 @@ body {
 }
 
 main {
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 100rem;
     max-width: 200rem;
     padding-top: 4rem;
     margin: 0 auto;
@@ -79,9 +80,10 @@ header nav ul li a span {
 
 .text-area {
     grid-area: infos;
+    padding-top: 7.4rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .text-area .text-area-container {

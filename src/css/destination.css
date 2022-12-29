@@ -78,9 +78,10 @@ header nav ul li a span {
 
 .image-area {
     grid-area: image;
+    padding-top: 7.4rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .image-area .destination-tittle {
@@ -109,11 +110,11 @@ header nav ul li a span {
 
 .destination-infos-area {
     grid-area: destination-infos;
-    padding-top: 18rem;
+    padding-top: 17rem;
     color: #D0D6F9;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .destination-infos-area nav ul{
