@@ -80,9 +80,9 @@ header nav ul li a span {
 
 .text-area {
     grid-area: infos;
-    padding-top: 7.4rem;
+    padding: 7.4rem 0 0 20rem;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: flex-start;
 }
 

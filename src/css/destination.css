@@ -78,14 +78,14 @@ header nav ul li a span {
 
 .image-area {
     grid-area: image;
-    padding-top: 7.4rem;
+    padding: 7.4rem 0 0 20rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
 .image-area .destination-tittle {
-    margin: 0 0 10rem 27rem;
+    margin-bottom: 10rem;
     color: #ffffff;
     font-size: 2.8rem;
     letter-spacing: 0.472rem;
@@ -101,7 +101,7 @@ header nav ul li a span {
     display: none;
     width: 44.5rem;
     height: 44.5rem;
-    margin-left: 33rem;
+    /* margin-left: 33rem; */
 }
 
 .image-area .moon-img {
