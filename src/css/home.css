@@ -133,3 +133,72 @@ header nav ul li a span {
 .button-area button:hover {
     box-shadow: 0 0 0 8.8rem #9797973b;
 }
+
+@media screen and (max-width: 800px) {
+    body {
+        background: url(../images/home/background-home-tablet.jpg);
+    }
+
+    main {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        height: 10rem;
+        margin-bottom: 10.6rem;
+    }
+
+    header nav {
+        justify-content: center;
+        height: 100%;
+    }
+
+    header nav .header-design-line {
+        display: none;
+    }
+
+    header nav ul {
+        margin-left: 0;
+    }
+
+    header nav ul li a {
+        font-size: 1.4rem;
+        letter-spacing: 0.236rem;
+    }
+    
+    header nav ul li a span {
+        display: none;
+    }
+
+    .main-text-area {
+        height: 33.4rem;
+        margin-bottom: 15.6rem;
+    }
+
+    .main-text-area .main-text-container {
+        margin-bottom: 0;
+    }
+
+    .main-text-area .main-text-container .main-text-prelude {
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: 0.338rem;
+        color: #D0D6F9;
+    }
+
+    .main-text-area .main-text-container .main-text {
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
+
+    .button-area button {
+        width: 24.2rem;
+        height: 24.2rem;
+        margin-bottom: 0;
+    }
+
+    /* temrinar responsividade das páginas */
+}
