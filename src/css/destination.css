@@ -11,6 +11,7 @@ main {
     display: grid;
     grid-template-areas: "menu menu"
                          "image destination-infos";
+    grid-template-rows: 10rem;
 }
 
 .image-area {
@@ -38,7 +39,6 @@ main {
     display: none;
     width: 44.5rem;
     height: 44.5rem;
-    /* margin-left: 33rem; */
 }
 
 .image-area .moon-img {

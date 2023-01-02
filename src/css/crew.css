@@ -4,7 +4,7 @@ body {
 }
 
 main {
-    height: 100vh;
+    min-height: 100vh;
     max-height: 100rem;
     max-width: 200rem;
     padding-top: 4rem;
@@ -12,12 +12,13 @@ main {
     display: grid;
     grid-template-areas: "menu menu"
                          "infos image";
-    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 10rem;
 }
 
 .text-area {
     grid-area: infos;
-    padding: 7.4rem 0 0 20rem;
+    max-width: 60vw;
+    padding: 7.4rem 0 9.5rem 20rem;
     display: flex;
     align-items: flex-start;
 }
@@ -99,6 +100,8 @@ main {
 }
 
 .crew-image-area img {
+    /* max-height: 90vh;
+    max-width: 35vw; */
     display: none;
 }
 

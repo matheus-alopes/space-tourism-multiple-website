@@ -13,6 +13,7 @@ main {
     grid-template-areas: "menu menu menu"
                          "title title title"
                          "navigation text image";
+    grid-template-rows: 10rem;
 }
 
 main .page-prelude-title {
