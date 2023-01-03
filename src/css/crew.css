@@ -95,7 +95,7 @@ main {
 
 .crew-image-area {
     grid-area: image;
-    max-height: 110rem;
+    max-height: 100rem;
     display: flex;
     align-items: flex-end;
 }

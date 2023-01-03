@@ -22,14 +22,14 @@ main {
     justify-content: flex-start;
 }
 
-.image-area .destination-tittle {
+.image-area .page-title {
     margin-bottom: 10rem;
     color: #ffffff;
     font-size: 2.8rem;
     letter-spacing: 0.472rem;
 }
 
-.image-area .destination-tittle span {
+.image-area .page-title span {
     margin-right: 2.8rem;
     color: #ffffff41;
     font-weight: bold;
@@ -86,7 +86,7 @@ main {
     display: block;
 }
 
-.destination-infos-area .destination-infos-container .destination-tittle {
+.destination-infos-area .destination-infos-container .destination-title {
     font-family: 'Bellefair', serif;
     font-size: 10rem;
     color: #ffffff;
@@ -127,30 +127,52 @@ main {
     }
 
     header {
-        height: 10rem;
+        margin-bottom: 0;
     }
 
-    header nav {
+    .image-area {
+        padding: 4rem 0 0 0;
+    }
+
+    .image-area .page-title {
+        margin: 0 0 6rem 5.5rem;
+        font-size: 2rem;
+        letter-spacing: 0.338rem;
+    }
+
+    .image-area img {
+        width: 30rem;
+        height: 30rem;
+        align-self: center;
+    }
+
+    .destination-infos-area {
+        padding-top: 5.3rem;
+        align-self: center;
+        text-align: center;
+    }
+
+    .destination-infos-area nav ul{
         justify-content: center;
-        height: 100%;
     }
 
-    header nav .header-design-line {
-        display: none;
+    .destination-infos-area .destination-infos-container {
+        width: 57rem;
+        margin-bottom: 13rem;
     }
 
-    header nav ul {
-        margin-left: 0;
+    .destination-infos-area .destination-infos-container .destination-title {
+        font-size: 8rem;
     }
 
-    header nav ul li a {
-        font-size: 1.4rem;
-        letter-spacing: 0.236rem;
-    }
-    
-    header nav ul li a span {
-        display: none;
+    .destination-infos-area .destination-infos-container .destination-text {
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 2.8rem;
     }
 
-    
+    .destination-infos-area .destination-infos-container footer {
+        display: flex;
+        justify-content: center;
+    }
 }

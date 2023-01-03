@@ -60,3 +60,32 @@ header nav ul li a span {
     margin-right: 0.5rem;
     font-weight: bold;
 }
+
+@media screen and (max-width: 800px) {
+    header {
+        min-height: 10rem;
+        margin-bottom: 10.6rem;
+    }
+
+    header nav {
+        width: 70%;
+        justify-content: center;
+    }
+
+    header nav .header-design-line {
+        display: none;
+    }
+
+    header nav ul {
+        margin-left: 0;
+    }
+
+    header nav ul li a {
+        font-size: 1.4rem;
+        letter-spacing: 0.236rem;
+    }
+    
+    header nav ul li a span {
+        display: none;
+    }
+}
