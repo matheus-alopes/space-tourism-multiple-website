@@ -95,13 +95,14 @@ main {
 
 .crew-image-area {
     grid-area: image;
+    max-height: 110rem;
     display: flex;
     align-items: flex-end;
 }
 
 .crew-image-area img {
-    /* max-height: 90vh;
-    max-width: 35vw; */
+    /* max-height: 90vh; */
+    max-width: 35vw;
     display: none;
 }
 
