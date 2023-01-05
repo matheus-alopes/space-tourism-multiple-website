@@ -1,7 +1,6 @@
-//Menu JS
 function removerEstilosDeBotoes(arrayDeBotoes) {
     for(let i = 0; i < arrayDeBotoes.length; i++) {
-        arrayDeBotoes[i].classList.remove("active-button"); //Mudar todas as classes para "active button" no arquivo CSS
+        arrayDeBotoes[i].classList.remove("active-button");
     }
 }
 

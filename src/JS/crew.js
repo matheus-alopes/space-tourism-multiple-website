@@ -1,4 +1,4 @@
-import {adicionarAcaoDeClick} from "./menu.js" 
+import {adicionarAcaoDeClick} from "./main.js" 
 
 const commander = {
     image: document.querySelector("main .crew-image-area .commander-img"),

@@ -1,4 +1,4 @@
-import { adicionarAcaoDeClick } from "./menu.js";
+import { adicionarAcaoDeClick } from "./main.js";
 
 const vehicle = {
     image: document.querySelector("main .img-container .vehicle-img"),
