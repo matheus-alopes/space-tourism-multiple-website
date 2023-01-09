@@ -20,3 +20,5 @@ let technologies = [vehicle, spaceport, capsule];
 const navigationButtons = document.querySelectorAll("main .navigation-buttons div");
 
 adicionarAcaoDeClick(navigationButtons, technologies);
+
+console.log(technologies);

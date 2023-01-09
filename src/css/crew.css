@@ -140,6 +140,10 @@ main {
         letter-spacing: 0.338rem;
     }
     
+    .text-area .text-area-container .page-prelude-title span {
+        margin-right: 1.6rem;
+    }
+
     .text-area .text-area-container .crew-infos {
         display: flex;
         justify-content: center;

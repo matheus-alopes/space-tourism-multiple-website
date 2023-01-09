@@ -140,6 +140,10 @@ main {
         letter-spacing: 0.338rem;
     }
 
+    .image-area .page-title span {
+        margin-right: 1.6rem;
+    }
+
     .image-area img {
         width: 30rem;
         height: 30rem;
