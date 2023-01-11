@@ -12,7 +12,7 @@ header .logo {
     height: 4.8rem;
 }
 
-header nav {
+header .menu-navigation {
     position: relative;
     width: 60%;
     height: 100%;
@@ -20,7 +20,7 @@ header nav {
     display: flex;
 }
 
-header nav .header-design-line {
+header .menu-navigation .header-design-line {
     position: absolute;
     left: -55%;
     width: 60%;
@@ -28,35 +28,31 @@ header nav .header-design-line {
     border-bottom: 0.1rem solid #979797;
 }
 
-header nav ul {
+header .menu-navigation ul {
     margin-left: 15%;
     display: flex;
     align-items: flex-end;
     gap: 4.8rem;
 }
 
-header nav ul li {
+header .menu-navigation ul li {
     height: 60%;
 }
 
-header nav ul li:hover {
+header .menu-navigation ul li:hover {
     border-bottom: 0.3rem solid #ffffff50;
 }
 
-header nav ul li:active {
+header .menu-navigation ul li.active-page {
     border-bottom: 0.3rem solid #ffffff;
 }
 
-header nav ul li.active-page {
-    border-bottom: 0.3rem solid #ffffff;
-}
-
-header nav ul li a {
+header .menu-navigation ul li a {
     font-size: 1.6rem;
     letter-spacing: 0.27rem;
 }
 
-header nav ul li a span {
+header .menu-navigation ul li a span {
     margin-right: 0.5rem;
     font-weight: bold;
 }
@@ -65,7 +61,7 @@ header .menu-burger-img {
     display: none;
 }
 
-header .menu-burger-active-page {
+header .menu-burger-navigation {
     display: none;
 }
 
@@ -75,25 +71,25 @@ header .menu-burger-active-page {
         margin-bottom: 10.6rem;
     }
 
-    header nav {
+    header .menu-navigation {
         width: 70%;
         justify-content: center;
     }
 
-    header nav .header-design-line {
+    header .menu-navigation .header-design-line {
         display: none;
     }
 
-    header nav ul {
+    header .menu-navigation ul {
         margin-left: 0;
     }
 
-    header nav ul li a {
+    header .menu-navigation ul li a {
         font-size: 1.4rem;
         letter-spacing: 0.236rem;
     }
     
-    header nav ul li a span {
+    header .menu-navigation ul li a span {
         display: none;
     }
 }
@@ -110,23 +106,51 @@ header .menu-burger-active-page {
         height: 4rem;
     }
 
-    header nav {
+    header .menu-navigation {
         display: none;
     }
 
     header .menu-burger-img {
         display: block;
         z-index: 1;
+        transition: 0.5s;
+        cursor: pointer;
     }
 
-    header .menu-burger-active-page {
-        display: block;
+    header .menu-burger-navigation {
+        padding: 11.8rem 0 0 3.2rem;
         position: absolute;
         top: 0;
         right: 0;
         width: 65vw;
         height: 100vh;
         background:  #ffffff / 0.05;
-        backdrop-filter: blur(1.5rem);
+        backdrop-filter: blur(3rem);
+    }
+
+    header .menu-burger-navigation ul {
+        font-size: 1.6rem;
+        letter-spacing: 0.27rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+
+    header .menu-burger-navigation ul li {
+        padding-bottom: 1rem;
+        width: 80%;
+    }
+
+    header .menu-burger-navigation ul li:hover {
+        border-bottom: 0.3rem solid #ffffff50;
+    }
+    
+    header .menu-burger-navigation ul li.active-page {
+        border-bottom: 0.3rem solid #ffffff;
+    }
+    
+    header .menu-burger-navigation ul li a span {
+        margin-right: 0.5rem;
+        font-weight: bold;
     }
 }
