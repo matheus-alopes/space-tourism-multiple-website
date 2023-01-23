@@ -86,6 +86,10 @@ main {
         flex-direction: column;
     }
 
+    header {
+        margin-bottom: 10rem;
+    }
+
     .main-text-area {
         height: 33.4rem;
         margin-bottom: 15.6rem;
@@ -115,12 +119,12 @@ main {
 }
 
 @media screen and (max-width: 600px) {
-    /* body {
-        background-image: url(../images/home/background-home-mobile.jpg);
-    } */
-
     main {
         padding-bottom: 5rem;
+    }
+
+    main header {
+        margin-bottom: 5rem;
     }
 
     .main-text-area {
@@ -151,5 +155,9 @@ main {
         height: 15rem;
         font-size: 2rem;
         letter-spacing: 0.13rem;
+    }
+
+    .button-area button:hover {
+        box-shadow: 0 0 0 5rem #9797973b;
     }
 }

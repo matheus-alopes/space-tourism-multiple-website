@@ -6,17 +6,16 @@ let menuBurgerNavigationPageClosed = true;
 menuBurgerIcon.addEventListener("click", 
     () => {
         if (menuBurgerNavigationPageClosed) {
-            menuBurgerIcon.style.transform = "rotate(45deg)";
-            // menuBurgerIcon.style.transform = "rotateY(360deg)";
+            menuBurgerIcon.style.transform = "rotate(405deg)";
 
-            menuBurgerNavigationPage.style.display = "block";
+            menuBurgerNavigationPage.style.width = "65vw";
 
             menuBurgerNavigationPageClosed = false;
         } else {
             menuBurgerIcon.style.transform = "rotate(0)";
 
-            menuBurgerNavigationPage.style.display = "none";
-
+            menuBurgerNavigationPage.style.width = "0";
+            
             menuBurgerNavigationPageClosed = true;
         }
         

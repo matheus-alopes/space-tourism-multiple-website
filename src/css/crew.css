@@ -101,7 +101,6 @@ main {
 }
 
 .crew-image-area img {
-    /* max-height: 90vh; */
     max-width: 35vw;
     display: none;
 }
@@ -126,15 +125,14 @@ main {
         padding: 0;
         align-self: center;
         text-align: center;
-        
     }
     
     .text-area .text-area-container {
-        width: 62rem;
+        width: 98vw;
     }
     
     .text-area .text-area-container .page-prelude-title {
-        margin: 4rem 0 6rem 0;
+        margin: 4rem 0 6rem 4rem;
         text-align: start;
         font-size: 2rem;
         letter-spacing: 0.338rem;
@@ -182,8 +180,71 @@ main {
         flex-direction: column;
         align-items: center;
     }
+}
 
-    .crew-image-area img {
-        max-width: 35vw;
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url(../images/crew/background-crew-mobile.jpg);
+    }
+    
+    main {
+        position: relative;
+        padding-bottom: 10.4rem;
+    }
+
+    .text-area .text-area-container .page-prelude-title {
+        margin: 0;
+        text-align: center;
+        font-size: 1.6rem;
+        letter-spacing: 0.27rem;
+        z-index: -1;
+        position: absolute;
+        top: 10rem;
+        left: 30%;
+    }
+
+    .crew-image-area {
+        order: 0;
+        width: 90%;
+        margin: 6rem 0 3.2rem 0;
+        border-bottom: 0.1rem solid #383B4B;
+        align-self: center;
+    }
+
+    .text-area {
+        order: 1;
+        width: 100%;
+    }
+
+    .text-area .text-area-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-area .navigation-dots {
+        order: 0;
+        margin-bottom: 3.2rem;
+    }
+
+    .text-area .text-area-container .crew-infos {
+        order: 1;
+    }
+
+    .text-area .text-area-container .crew-infos li .crew-patent{
+        font-size: 1.6rem;
+    }
+
+    .text-area .text-area-container .crew-infos li .crew-name {
+        font-size: 2.4rem;
+    }
+
+    .text-area .text-area-container .crew-infos li .crew-description {
+        width: 33rem;
+        margin-bottom: 0;
+        text-align: center;
+        line-height: 2.5rem;
+        font-size: 1.5rem;
     }
 }

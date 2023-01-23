@@ -63,12 +63,16 @@ header .menu-burger-img {
 
 header .menu-burger-navigation {
     display: none;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.4s;
 }
 
 @media screen and (max-width: 800px) {
     header {
         min-height: 10rem;
         margin-bottom: 10.6rem;
+        padding-left: 4rem;
     }
 
     header .menu-navigation {
@@ -96,8 +100,8 @@ header .menu-burger-navigation {
 
 @media screen and (max-width: 600px) {
     header {
-        padding: 0 5.5rem;
-        margin-bottom: 4.8rem;
+        padding: 0 2.4rem;
+        margin-bottom: 0;
         position: relative;
     }
 
@@ -113,22 +117,27 @@ header .menu-burger-navigation {
     header .menu-burger-img {
         display: block;
         z-index: 1;
-        transition: 0.5s;
+        transition: 0.7s;
         cursor: pointer;
     }
 
+    header .menu-burger-img:hover {
+        box-shadow: 0 0 1.5rem 0 hsl(0, 1%, 39%);
+    }
+
     header .menu-burger-navigation {
-        padding: 11.8rem 0 0 3.2rem;
+        padding-top: 11.8rem;
+        display: block;
         position: absolute;
         top: 0;
         right: 0;
-        width: 65vw;
         height: 100vh;
         background:  #ffffff / 0.05;
         backdrop-filter: blur(3rem);
     }
 
     header .menu-burger-navigation ul {
+        padding-left: 3.2rem;
         font-size: 1.6rem;
         letter-spacing: 0.27rem;
         display: flex;
@@ -142,7 +151,7 @@ header .menu-burger-navigation {
     }
 
     header .menu-burger-navigation ul li:hover {
-        border-bottom: 0.3rem solid #ffffff50;
+        border-bottom: 0.2rem solid #ffffff50;
     }
     
     header .menu-burger-navigation ul li.active-page {
