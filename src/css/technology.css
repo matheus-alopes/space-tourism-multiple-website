@@ -133,6 +133,28 @@ main .img-container .capsule-img{
     background: url(../images/technology/image-space-capsule-portrait.jpg) no-repeat;
 }
 
+@media screen and (max-width: 1150px) {
+    main .page-prelude-title {
+        margin-left: 10rem;
+        font-size: 2rem;
+        letter-spacing: 0.338rem;
+    }
+    
+    main .text-container .technology-prelude-text {
+        font-size: 1.4rem;
+        letter-spacing: 0.236rem;
+    }
+
+    main .text-container ul li .technology-title {
+        font-size: 4rem;
+    }
+    
+    main .text-container ul li .technology-text {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
+}
+
 @media screen and (max-width: 800px) {
     body {
         background-image: url(../images/technology/background-technology-tablet.jpg);
@@ -151,8 +173,6 @@ main .img-container .capsule-img{
 
     main .page-prelude-title {
         margin: 0 0 0 4rem; 
-        font-size: 2rem;
-        letter-spacing: 0.338rem;
     }
 
     main .page-prelude-title span {
@@ -200,17 +220,6 @@ main .img-container .capsule-img{
     
     main .text-container .technology-prelude-text {
         margin-bottom: 1rem;
-        font-size: 1.4rem;
-        letter-spacing: 0.236rem;
-    }
-
-    main .text-container ul li .technology-title {
-        font-size: 4rem;
-    }
-    
-    main .text-container ul li .technology-text {
-        font-size: 1.6rem;
-        line-height: 2.8rem;
     }
 }
 

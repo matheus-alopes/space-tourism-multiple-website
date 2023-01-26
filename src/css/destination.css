@@ -4,6 +4,7 @@ body {
 }
 
 main {
+    max-width: 100vw;
     min-height: 100vh;
     max-width: 200rem;
     padding-top: 4rem;
@@ -119,6 +120,31 @@ main {
     letter-spacing: 0.23rem;
 }
 
+@media screen and (max-width: 1150px) {
+    .image-area {
+        margin-right: 5rem;
+        padding-left: 10rem;
+    }
+    
+    .image-area .page-title {
+        font-size: 2rem;
+        letter-spacing: 0.338rem;
+    }
+
+    .destination-infos-area {
+        padding-right: 5rem;
+    }
+
+    .destination-infos-area .destination-infos-container .destination-title {
+        font-size: 8rem;
+    }
+
+    .destination-infos-area .destination-infos-container .destination-text {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
+}
+
 @media screen and (max-width: 800px) {
     main {
         padding-top: 0;
@@ -131,13 +157,12 @@ main {
     }
 
     .image-area {
+        margin: 0;
         padding: 4rem 0 0 0;
     }
 
     .image-area .page-title {
         margin: 0 0 6rem 4rem;
-        font-size: 2rem;
-        letter-spacing: 0.338rem;
     }
 
     .image-area .page-title span {
@@ -151,7 +176,7 @@ main {
     }
 
     .destination-infos-area {
-        padding-top: 5.3rem;
+        padding: 5.3rem 0 0 0;
         align-self: center;
         text-align: center;
     }
@@ -165,14 +190,8 @@ main {
         margin-bottom: 13rem;
     }
 
-    .destination-infos-area .destination-infos-container .destination-title {
-        font-size: 8rem;
-    }
-
     .destination-infos-area .destination-infos-container .destination-text {
         text-align: center;
-        font-size: 1.6rem;
-        line-height: 2.8rem;
     }
 
     .destination-infos-area .destination-infos-container footer {

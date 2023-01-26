@@ -109,6 +109,31 @@ main {
     display: block;
 }
 
+@media screen and (max-width: 1150px) {
+    .text-area {
+        padding: 7.4rem 10rem 9.5rem 10rem;
+    }
+
+    .text-area .text-area-container .page-prelude-title {
+        margin-bottom: 6rem;
+        font-size: 2rem;
+        letter-spacing: 0.338rem;
+    }
+
+    .text-area .text-area-container .crew-infos li .crew-patent{
+        font-size: 2.4rem;
+    }
+
+    .text-area .text-area-container .crew-infos li .crew-name {
+        font-size: 4rem;
+    }
+
+    .text-area .text-area-container .crew-infos li .crew-description {
+        line-height: 2.8rem;
+        font-size: 1.6rem;
+    }
+}
+
 @media screen and (max-width: 800px){
     main {
         padding-top: 0;
@@ -134,8 +159,6 @@ main {
     .text-area .text-area-container .page-prelude-title {
         margin: 4rem 0 6rem 4rem;
         text-align: start;
-        font-size: 2rem;
-        letter-spacing: 0.338rem;
     }
     
     .text-area .text-area-container .page-prelude-title span {
@@ -149,20 +172,16 @@ main {
 
     .text-area .text-area-container .crew-infos li .crew-patent{
         margin-bottom: 0.8rem;
-        font-size: 2.4rem;
     }
 
     .text-area .text-area-container .crew-infos li .crew-name {
         margin-bottom: 1.6rem;
-        font-size: 4rem;
     }
 
     .text-area .text-area-container .crew-infos li .crew-description {
         width: 46rem;
         margin-bottom: 4rem;
         text-align: center;
-        line-height: 2.8rem;
-        font-size: 1.6rem;
     }
 
     .text-area .navigation-dots {

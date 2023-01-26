@@ -1,4 +1,4 @@
-import { adicionarAcaoDeClick } from "./main.js";
+import { adicionarAcaoDeClick } from "../clickFunction.js";
 
 const vehicle = {
     image: document.querySelector("main .img-container .vehicle-img"),
