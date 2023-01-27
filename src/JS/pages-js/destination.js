@@ -1,4 +1,4 @@
-import {adicionarAcaoDeClick} from "../clickFunction.js"
+import {adicionarAcaoDeClick} from "../clickFunction"
 
 const moon = {
     image: document.querySelector("main .image-area .moon-img"),
