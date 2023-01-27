@@ -8,16 +8,14 @@ main {
     min-height: 100vh;
     max-height: 100rem;
     max-width: 250rem;
+    padding-top: 4rem;
     margin: 0 auto;
     padding-bottom: 10rem;
     display: grid;
     grid-template-areas: "menu menu menu"
                          "title title title"
                          "navigation text image";
-}
-
-main header {
-    margin-top: 4rem;
+    grid-template-rows: 10rem;
 }
 
 main .page-prelude-title {
