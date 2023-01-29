@@ -13,8 +13,8 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [About the Author](#author)
-- [Acknowledgments](#acknowledgments)"
+- [About the Author](#about-the-author)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
